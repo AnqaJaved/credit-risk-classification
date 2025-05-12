@@ -12,7 +12,6 @@ The goal is to assist financial institutions in identifying risky borrowers befo
 - `credit_risk_classification.ipynb` – Jupyter notebook containing all data processing, model training, and evaluation
 - `lending_data.csv` – Cleaned dataset of borrower financial history
 - `README.md` – Summary and analysis of the project
-- 
 ---
 
 ## Objective
