@@ -50,14 +50,14 @@ Train a **logistic regression classifier** on labeled loan data and evaluate how
 
 ### 3. Model Evaluation
 
-#### 🔹 Classification Report:
+### 🔹 Classification Report:
 
-| Class               | Precision | Recall | F1-score |
-|---------------------|-----------|--------|----------|
-| 0 (Healthy loans)   | 1.00      | 0.99   | 1.00     |
-| 1 (High-risk loans) | 0.84      | 0.94   | 0.89     |
+| Class | Precision | Recall | F1-score |
+|-------|-----------|--------|----------|
+| 0 (Healthy loans) | 1.00 | 0.99 | 1.00 |
+| 1 (High-risk loans) | 0.84 | 0.94 | 0.89 |
 
-- **Overall Accuracy:** 97%
+- **Overall Accuracy**: **97%**
 
 ---
 
