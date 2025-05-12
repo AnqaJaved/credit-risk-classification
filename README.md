@@ -1,75 +1,51 @@
-# 💼 Credit Risk Classification – Module 20 Challenge
+# Credit Risk Classification – Logistic Regression Model
 
-By: **Anqa Javed**
+This project demonstrates how logistic regression can be applied to predict the credit risk of borrowers based on their financial attributes. The goal is to help lending institutions classify applicants as low or high risk before issuing a loan.
 
----
+## Overview
 
-## 📌 Overview
+Using data from a peer-to-peer lending platform, this project trains and evaluates a supervised machine learning model to predict whether a loan is likely to default.
 
-The goal of this project was to build a machine learning model that can accurately classify loan applications as either **low risk** or **high risk**.  
-The dataset comes from a peer-to-peer lending platform and includes financial data such as loan size, interest rate, borrower income, and debt level.  
-We used a **Logistic Regression model** to predict whether a borrower is likely to default on a loan.
+The logistic regression model was chosen for its efficiency and interpretability when working with binary classification tasks.
 
----
+## Project Structure
 
-## 📊 Machine Learning Process
+- `credit_risk_classification.ipynb` – Jupyter notebook containing all data processing, model training, and evaluation
+- `lending_data.csv` – Cleaned dataset of borrower financial history
+- `README.md` – Summary and analysis of the project
 
-### ✔️ Data Preparation
-- Loaded the dataset from `lending_data.csv`
-- Separated the data into:
-  - `X` (features): borrower financial data
-  - `y` (labels): loan_status (0 = healthy, 1 = high-risk)
-- Split the data into **training (75%)** and **testing (25%)** sets using `train_test_split`
-
-### ✔️ Model Training
-- Trained a **LogisticRegression** model using the training data (`X_train`, `y_train`)
-
-### ✔️ Predictions & Evaluation
-- Predicted loan risk using the test set (`X_test`)
-- Evaluated the model using a **confusion matrix** and **classification report**
-
----
-
-## 📈 Results
-
-### 🔹 Classification Report:
-
-| Class | Precision | Recall | F1-score |
-|-------|-----------|--------|----------|
-| 0 (Healthy loans) | 1.00 | 0.99 | 1.00 |
-| 1 (High-risk loans) | 0.84 | 0.94 | 0.89 |
-
-- **Overall Accuracy**: **97%**
-
----
-
-## 🧠 Summary and Recommendation
-
-The model performs extremely well on both healthy and high-risk loans.  
-It correctly identifies 99% of all healthy loans and 94% of all high-risk ones, with high precision for both.  
-Because of the strong balance between **accuracy, precision, and recall**, I recommend this model for use in real-world loan approval scenarios.  
-It will help the company reduce default risk while still approving creditworthy borrowers.
-
----
-
-## 🗂️ Project Files
-
-- `Credit_Risk/credit_risk_classification.ipynb` – Jupyter notebook containing the full ML workflow
-- `Credit_Risk/lending_data.csv` – Dataset used for training and testing
-- `Credit_Risk/README.md` – This file, with a full analysis report
-
----
-
-## ✅ Tools Used
+## Tools & Libraries
 
 - Python  
 - Pandas  
-- Scikit-learn (LogisticRegression, train_test_split, confusion_matrix, classification_report)  
-- Jupyter Notebook
+- Scikit-learn  
+- Jupyter Notebook  
 
----
+## Process
 
-## 📬 Contact
+1. Loaded and inspected the dataset
+2. Prepared features (`X`) and labels (`y`) for modeling
+3. Split data into training and testing sets
+4. Trained a logistic regression model using `LogisticRegression`
+5. Evaluated model performance using a confusion matrix and classification report
 
-This project was submitted as part of the University of Toronto Data Analytics Bootcamp.  
-Created and maintained by [Anqa Javed](https://github.com/AnqaJaved)
+## Results
+
+**Classification Report Highlights:**
+
+- Accuracy: **97%**
+- Precision (high-risk loans): **0.84**
+- Recall (high-risk loans): **0.94**
+- Precision (healthy loans): **1.00**
+- Recall (healthy loans): **0.99**
+
+These results indicate a high-performing model with excellent ability to distinguish between low and high credit risk applicants.
+
+## Conclusion
+
+The logistic regression model demonstrates strong performance for credit risk classification. Its accuracy and recall make it a good candidate for deployment in a real-world lending environment.
+
+## Author
+
+**Anqa Javed**  
+[GitHub Portfolio](https://github.com/AnqaJaved)
